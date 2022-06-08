@@ -3,15 +3,17 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
-import About from './components/About.vue'
+import Hero from './components/Hero.vue'
 import Projects from './components/Projects.vue'
+import Blog from './components/Blog.vue'
 import Footer from './components/Footer.vue'
 </script>
 
 <template>
   <Header/>
-  <About />
+  <Hero />
   <Projects/>
+  <Blog/>
   <Footer/>
 </template>
 
