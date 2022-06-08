@@ -10,7 +10,7 @@ import SectionTitle from './SectionTitle.vue'
                     <p class="text-3xl xl:text-4xl font-semibold leading-9 text-white">Blog</p>
                 </div>
                 <div class="mt-4">
-                    <p class="text-left text-base leading-6 text-white" >My humle space to share my thoughts about people and technology.</p>
+                    <p class="text-left text-base leading-6 text-white" >My humble space to share my thoughts about people and technology.</p>
                 </div>
                 <div class="mt-6 w-full">
                     <button class="px-4 bg-gray-900 flex justify-between items-center w-full lg:w-72 h-14  text-white hover:bg-gray-700 focus:ring-2 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800">
