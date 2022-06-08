@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import SectionTitle from './SectionTitle.vue'
 
 defineProps({
   msg: String
@@ -9,6 +10,7 @@ const count = ref(0)
 </script>
 
 <template>
+  <SectionTitle title='Projects'/>
   <h1>{{ msg }}</h1>
 
   <p>
@@ -26,7 +28,7 @@ const count = ref(0)
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
 
-  <button type="button" @click="count++">count is: {{ count }}</button>
+  <button class='btn btn-blue' type="button" @click="count++">count is: {{ count }}</button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
@@ -37,4 +39,14 @@ const count = ref(0)
 a {
   color: #42b983;
 }
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-blue {
+    @apply bg-indigo-700 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-indigo-500;
+  }
 </style>
