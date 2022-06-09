@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+# markelca.com
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## I'm using:
+<div>
+  <img alt='Vue' src='https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D'/>
+  <img alt='Tailwind' src='https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white'/>
+  <img alt='Vite' src='https://img.shields.io/badge/Vite-%230170FE.svg?style=for-the-badge&logo=vite&logoColor=yellow'/>
+  <img alt='Yarn' src='https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white'/>
+</div>
 
-## Recommended IDE Setup
+## Development installation
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+1. ```git clone https://github.com/MarkelCA/markelca.com```
+2. ```cd markelca.com/app```
+3. ```yarn```
+4. ```yarn dev```
