@@ -9,7 +9,11 @@ module.exports = {
       serif: ['Times New Roman', 'Times', 'serif'],
       mono: ['monospace']
     },
-    extend: {},
+    extend: {
+        scale: {
+        '115': '1.15',
+        }
+    },
   },
   plugins: [],
 }
