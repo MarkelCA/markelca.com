@@ -11,7 +11,7 @@ const pageSize = 6
 const getRepos = (newPage) => {
     if(newPage > totalPages.value || newPage < 1) return;
     axios
-        .get(`https://api.github.com/users/markelca/repos?per_page=${pageSize}&page=${newPage}`)
+        .get(`https://api.github.com/users/markelca/repos?per_page=${pageSize}&page=${newPage}&sort=updated`)
         .then(response => {
             emit('update:repos', response.data)
             page.value = newPage

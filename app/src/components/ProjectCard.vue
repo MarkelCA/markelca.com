@@ -1,5 +1,13 @@
 <script setup>
-    defineProps(['name', 'description', 'url'])
+import { ref, watch } from 'vue'
+import moment from 'moment';
+const props = defineProps(['name', 'description', 'url', 'updated'])
+const parsedDate = ref('')
+
+parsedDate.value = moment(props.updated).fromNow()
+watch(props, () => {
+    parsedDate.value = moment(props.updated).fromNow()
+})
 </script>
 <template>
 <div class="flex justify-center">
@@ -9,12 +17,9 @@
       {{description}}
     </p>
     <p class="text-gray-500 text-base mb-8 text-left">
-      Last updated 3 days ago
+      Last updated: {{parsedDate}}
     </p>
     <a target='_blank' class='absolute bottom-0 m-4 left-0' :href='url'><button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Github</button></a>
   </div>
 </div>
 </template>
-
-<style scoped>
-</style>
