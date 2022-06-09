@@ -2,22 +2,31 @@
 import ProjectCard from './ProjectCard.vue'
 import axios from 'axios'
 import { ref, onMounted } from 'vue'
+import ProjectPaginator from './ProjectPaginator.vue'
 
-// declare a ref to hold the element reference
-// the name must match template ref value
 const repos = ref([])
+const page = ref(1)
 
-onMounted(() => {
+const getRepos = (e) => {
+    page.value++
     axios
-        .get('https://api.github.com/users/markelca/repos')
+        .get(`https://api.github.com/users/markelca/repos?per_page=${6}&page=${page.value}`)
         .then(response => {
             repos.value = response.data
-            console.log(repos)
+            console.log(response.data)
         })
+        .catch((error) => console.log(error))
+}
+onMounted(() => {
+  getRepos()
 })
 </script>
 <template>
-    <div id='project-list' class='flex flex-wrap space-x-2 md:space-x-8 sm:space-y-6 md:space-y-0 flex-col md:flex-row lg-flex-row'>
+    <button @click='getRepos'>More</button>
+    {{page}}
+    <ProjectPaginator v-model='page'/>
+    <div id='project-list' class='grid grid-cols-1 sm:grid-cols-3'>
         <ProjectCard v-for='repo in repos' :name='repo.name' :description='repo.description'/>
     </div>
+    <ProjectPaginator/>
 </template>

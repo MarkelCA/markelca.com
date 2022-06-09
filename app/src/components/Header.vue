@@ -17,8 +17,8 @@
                     </div>
 
                     <ul class="pr-12 xl:flex items-center h-full hidden space-x-8">
-                        <a class='py-3 hover:text-indigo-700'><li class="cursor-pointer h-full flex items-center text-sm text-gry-800 tracking-normal">About</li></a>
-                        <a class='py-3 hover:text-indigo-700'><li class="cursor-pointer h-full flex items-center text-sm text-gry-800 tracking-normal">Projects</li></a>
+                        <a href='about' class='py-3 hover:text-indigo-700'><li class="cursor-pointer h-full flex items-center text-sm text-gry-800 tracking-normal">About</li></a>
+                        <a href='#projects' class='py-3 hover:text-indigo-700'><li class="cursor-pointer h-full flex items-center text-sm text-gry-800 tracking-normal">Projects</li></a>
                         <a class='py-3 hover:text-indigo-700'><li class="cursor-pointer h-full flex items-center text-sm text-gry-800 tracking-normal">Blog</li></a>
                         <a class='py-3 hover:text-indigo-700'><li class="cursor-pointer h-full flex items-center text-sm text-gray-800 tracking-normal">Contact</li></a>
                     </ul>
@@ -32,55 +32,23 @@
                                 <span class="leading-6 ml-2 font-bold"> About </span>
                             </div>
                         </li>
-                        <li class="xl:hidden flex-col cursor-pointer text-gray-600 text-base leading-3 tracking-normal py-3 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" @click="dropdownHandler($event)">
+                        <li class="xl:hidden flex-col cursor-pointer text-gray-600 text-base leading-3 tracking-normal py-3 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
                             <div class="flex items-center">
                                 <span class="leading-6 ml-2 font-bold"> Projects </span>
                             </div>
-                            <ul class="ml-2 mt-3 hidden">
-                                <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Landing Pages</li>
-                                <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Templates</li>
-                                <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Components</li>
-                            </ul>
                         </li>
                         <li class="xl:hidden cursor-pointer text-gray-600 text-base leading-3 tracking-normal py-3 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
                             <span class="leading-6 ml-2 font-bold">Blog</span>
                         </li>
-                        <li class="xl:hidden flex-col cursor-pointer text-gray-600 text-base leading-3 tracking-normal mb-2 py-3 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" @click="dropdownHandler($event)">
+                        <li class="xl:hidden flex-col cursor-pointer text-gray-600 text-base leading-3 tracking-normal mb-2 py-3 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center">
                             <div class="flex items-center">
                                 <span class="leading-6 ml-2 font-bold"> Contact </span>
                             </div>
-                            <ul class="ml-2 mt-3 hidden">
-                                <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Landing Pages</li>
-                                <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Templates</li>
-                                <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Components</li>
-                            </ul>
                         </li>
                         <li>
                             <hr class="border-b border-gray-300 w-full" />
                         </li>
                         <li class="ml-2 cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                            <div class="flex items-center">
-                                <div class="w-12 cursor-pointer flex text-sm border-2 border-transparent rounded focus:outline-none focus:border-white transition duration-150 ease-in-out">
-                                    <img class="rounded h-10 w-10 object-cover" v-bind:src="profilePhoto" alt="logo" />
-                                </div>
-                                <p class="leading-6 text-base ml-1 cursor-pointer">Jane Doe</p>
-                                <div class="sm:ml-2 text-white relative">
-                                    <svg v-bind:xmlns="xmlns" class="icon icon-tabler icon-tabler-chevron-down cursor-pointer" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"></path>
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="ml-2 cursor-pointer text-gray-600 text-base leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none">
-                            <div class="flex items-center">
-                                <svg v-bind:xmlns="xmlns" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                    <circle cx="12" cy="7" r="4" />
-                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                </svg>
-                                <span class="leading-6 ml-2">Profile</span>
-                            </div>
                         </li>
                     </ul>
 

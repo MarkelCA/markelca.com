@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class='md:w-2/4 m-auto font-sans mt-14 font-sans'>
+    <div id='about' class='md:w-2/4 m-auto font-sans mt-14 font-sans'>
         <img class='rounded-full m-auto mb-8' src="../assets/markelca.png">
         <h1 class='text-4xl'>Markel Cuesta - <span class='text-indigo-700'>Fullstack Developer</span></h1>
         <h2 class='text-2xl my-6 text-gray-500 border-b-2'>Who am I</h2>
